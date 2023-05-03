@@ -1,277 +1,328 @@
-<!doctype html>
 <html>
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet'>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <title>My Website</title>
-  <style>
- html, body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Lobster', sans-serif;
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    //<link rel="stylesheet" href="./styles.css">
+    
+    
+    <style>
+      
+      body {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0 10%;
+background-image: linear-gradient(to bottom right, #F88379, #DB7093, #2d5dcc, #452c63 );
 }
 
-img {
-  margin: 10px auto;
-  
-  max-width: 200px;
-  max-height: 280px;
-}
-
-ul {
-  text-align: right;
-}
-
-h1 {
-  color: #002559;
-  font-size: 60px;
+h1{
+  font-family: 'Source Code Pro';
+  font-size: 48px;
   text-align: center;
+  
+  
 }
-
-/*Sizing*/
 .container {
-  margin: 0 auto;
-}
-
-.udemy{
-  background-color: #88BDBC;
-  display: inline-flex;
-  flex-wrap: wrap;
- 
-  align-items: center;
-  justify-content: center;
-}
-
-.main {
-  background-color: #ffc200;
-}
-
-/*Header Section*/
-.header {
-  padding: 30px 0px 40px;
-  margin-left: 50px;
-  margin-right: 50px;
   
-}
-
-
-.introduction h1{
-
-  font-size: 36px;
-}
-
-.header li {
-  list-style: none;
-  display: inline-block;
-}
-
-.header li a {
-  color: #333;
-  margin:0;
-  border:0px;
-}
-
-.udemy img {
+  padding: 10px;
   margin: 10px auto;
-  max-width: 400px;
- 
-  max-height: auto;
-
-  
+  border: 10px solid #e6e6e6;
 }
 
-.udemy p{
-  margin-left: 50px;
-  max-width: 50%;
-  font-size: 20px;
-  color: white;
-}
-
-
-/*Jumbotron Section*/
-.jumbotron {
-  background-color: #fff;
-  max-width: 1200px;
-  margin-left: 50px;
-}
-
-.jumbotron h2 {
-  font-size: 50px;
-  margin-bottom: 70px;
-}
-
-.jumbotron h2 span {
-  color:#ffc200;
-}
-
-.jumbotron p {
-  text-shadow: 0 0;
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 0;
-}
-
-/*Banner Section*/
-.banner {
-  background-color: #88BDBC;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-/*Expertise Section*/
-.cards {
-  background-color: #88BDBC;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  
-}
-
- h4{color: #fff;}
- 
- .book-banner{color: #fff;
- background-color:blue;
- font-size: 48px;}
-
-.col {
-  display: inline-flex;
-  flex-direction:column;
-  justify-content: center;
-  margin: 10px;
-  align-items: center;
-  
-}
-
-#book, #course {
-  padding: 20px;
-  background-color: #002559;
-  color: #fff;
-  margin: 0;
-  text-align: center;
-}
-
-/*Footer Section*/
-.footer {
-  padding: 60px 0px;
-  background-color: #000;
-  color: #fff;
-}
-
-
-
-.title{
-  text-align: center;
-  font-size:18px;
-}
-
-.footer {
-  padding: 30px 0px 40px;
- 
-  background-color: #002559;
-  color: white;
-}
-
-.footer li {
-  list-style: none;
+.card {
+  /* Add shadows to create the "card" effect */
   display: inline-block;
-  color: white;
+        width: 200px;
+        background-color: #e6e6e6;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px;
+        
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.color-container {
+  //padding: 10px;
+  width: 100%;
   
 }
+.color-box{
+  background-color: #fff;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
   
-  </style>
-</head>
-<body>
-  <div class='header'>
-    <div class='container'>
-      <h1>NILS STOTZ</h1>
-      
-    </div>
-  </div>
-  <div class='banner'>
-    <div class='container'>
-      <h2>Turning start-ups into scale-ups</h2>
-      
-    </div>
-  </div>
+  min-height: 150px;
+}
 
-  <div class='introduction'>
-    <div class='container'>
-<h1>Hi! My name is Nils. I am strategy consultant, focusing on product and growth. I have worked in several early and late-stage product leadership team and I am involved as an advisor in various technology startups.</h1>
+.color-panel {
+  display: inline-block;
+  width: 95%;
+  text-align: center;
+  margin: auto;
+  
+  //margin: 20px auto;
+  min-height: 150px;
+}
 
+.cool-blue {
+  background-color: #2d5dcc;
+  color: #fff;
+}
 
-    </div>
-    </div>
+.pink {
+  background-color: #d957d9;
+  color: #fff;
+}
 
+.mint-green {
+  background-color: #4fe0b0;
+  color: #fff;
+}
+
+.hallmark-purple {
+  background-color: #452c63;
+  color: #fff;
+}
+
+.dark-cyan{
+  background-color: #008B8B;
+  color: #fff;
+}
+
+.raspberry{
+  background-color: #E30B5C;
+  color: #fff;
+}
+
+.tea-rose{
+  background-color: #F88379;
+  color: #fff;
+}
+
+.rosewood{
+  background-color: #65000B;
+  color: #fff;
+}
+.pale-violet-red{
+  background-color: #DB7093;
+  color: #fff;
+}
+
+.font-panel {
+  width: 100%;
+  //display: inline-block;
+  font-size: 30px;
+  
+}
+
+.font-label {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.regular {
+  font-style: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.nunito-sans {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.source-code-pro {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;}
+
+  .tangerine {
+  font-family: 'Tangerine';
+  font-size: 48px;}
   
 
+.text-panel h1 {
+  font-weight: 700;
+  font-size: 32px;
+  font-family: 'Nunito Sans', sans-serif;
+}
 
+.text-panel h2 {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
 
+ .text-panel p {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+      
+      
+    </style>
+  </head>
+  <body>
+    <h1>My Website Style Guide</h1>
  
 
-  
-  
-  
-  
-  <div class='container'>
-    <h2 class = "book-banner" id='book'>BOOKS</h2>
-    <div class='main'>
-      <div class='spacer'>
-        <div class='cards'>
-          <div class='col'>
-           <a href='https://www.amazon.com/Referral-people-friends-business-Growth-ebook/dp/B08FLJBZ4L'><img src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/31eFYHJo6rL.jpg'></a>
-           
-          </div>
-          
-          <div class='col'>
-            <a href='https://www.amazon.de/-/en/Nils-Stotz/dp/3662654660/'><img src='https://media.springernature.com/full/springer-static/cover-hires/book/978-3-662-65467-5'></a>
-            
-            
-          </div>
-          <div class='col'>
-            <a href='https://www.amazon.de/-/en/Nils-Stotz/dp/3662665735/'><img src='https://prodimage.images-bn.com/pimages/9783662665732_p0_v3_s1200x630.jpg'> </a>
-            
-            </div>
+
+    <div class="container">
+      <h2>Fonts</h2>
+      <div class="font-container">
+        <div class="font-panel">
+          <p class="font-label source-code-pro">Source Code Pro</p>
+          <p class="regular source-code-pro">The quick brown fox jumps over the lazy dog.</p>
+          <p class="bold source-code-pro">The quick brown fox jumps over the lazy dog.</p>
+          <p class="italic source-code-pro">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+
+        <div class="font-panel">
+          <p class="font-label tangerine">Tangerine</p>
+          <p class="regular tangerine">The quick brown fox jumps over the lazy dog.</p>
+          <p class="bold tangerine">The quick brown fox jumps over the lazy dog.</p>
+          <p class="italic tangerine">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div class="font-panel">
+          <p class="font-label nunito-sans">Nunito Sans</p>
+          <p class="regular nunito-sans">The quick brown fox jumps over the lazy dog.</p>
+          <p class="bold nunito-sans">The quick brown fox jumps over the lazy dog.</p>
+          <p class="italic nunito-sans">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div class="font-panel">
+          <p class="font-label poppins">Poppins</p>
+          <p class="regular poppins">The quick brown fox jumps over the lazy dog.</p>
+          <p class="bold poppins">The quick brown fox jumps over the lazy dog.</p>
+          <p class="italic poppins">The quick brown fox jumps over the lazy dog.</p>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class='container'>
-    <h2 class = "book-banner" id='course'>COURSE</h2>
+    <div class="container">
+      <h2>Text Styles</h2>
+      <div class="text-container">
+        <div class="text-panel">
+          <h1>H1: Main page heading</h1>
+          <ul>
+            <li>Font-weight: 700 (bold)</li>
+            <li>Font-size: 26px</li>
+            <li>Font-family: Nunito Sans</li>
+          </ul>
+        </div>
+        <div class="text-panel">
+          <h2>H2: Subheading</h2>
+          <ul>
+            <li>Font-weight: 500</li>
+            <li>Font-size: 18px</li>
+            <li>Font-family: Poppins</li>
+          </ul>
+        </div>
+        <div class="text-panel">
+          <p>P: Paragraph text</p>
+          <ul>
+            <li>Font-weight: 400 (regular)</li>
+            <li>Font-size: 14px</li>
+            <li>Font-family: Poppins</li>
+          </ul>
+        </div>
+      </div>
     </div>
+       <div class="container">
+      <h2>Colors</h2>
+      <div class="color-container">
 
-  <div class='udemy'>
-    
+        <div class="card">
+        <div class="color-panel cool-blue">
+          
+        </div>
+        <p class="color-label" >Cool Blue</p>
+          <p class="color-hex">#2d5dcc</p>
+        </div>
 
-     <a href = "https://www.udemy.com/course/presentation-skills-for-product-managers/"><img src='https://cdn-thumbs.comidoc.net/750/5225900_e3fc_2.jpg'></a>
-    <p>As a product manager, your ability to communicate effectively and persuasively is crucial to your success. Whether you're pitching a new product idea to your boss, presenting to potential investors, or leading a team meeting, your presentation skills can make or break the success of your message.
 
-In this course, you'll learn the essential skills and techniques for creating effective presentations that help you convince stakeholders. </p>
-      
-    
-    </div>
 
-  
-
-   
-  
-  <div class='footer'>
-    <div class='container'>
-      
-      <ul>
-        <li><a href='https://de.linkedin.com/in/nilsstotz'>LinkedIn</a></li>
-        <li><a href='https://nils-stotz.medium.com/'>Medium</a></li>
+        <div class="card">
+          <div class="color-panel pink">
+          
+        </div>
+        <p class="color-label" >Pink</p>
+          <p class="color-hex">#d957d9</p>
+        </div>
         
-        <li><a href=''>Email</a></li>
-      </ul>
+
+        <div class="card">
+          <div class="color-panel mint-green">
+          
+        </div>
+        <p class="color-label" >Mint Green</p>
+          <p class="color-hex">#4fe0b0</p>
+        </div>
+
+        <div class="card">
+          <div class="color-panel hallmark-purple">
+          
+        </div>
+        <p class="color-label" >Hallmark Purple</p>
+          <p class="color-hex">#452c63</p>
+        </div>
+
+        <div class="card">
+          <div class="color-panel raspberry">
+          
+         
+        </div>
+          <p class="color-label" >Raspberry</p>
+          <p class="color-hex">#E30B5C</p>
+
+        </div>
+
+        <div class="card">
+          <div class="color-panel dark-cyan">
+          
+        </div>
+        <p class="color-label" >Dark Cyan</p>
+          <p class="color-hex">#008B8B</p>
+        </div>
+
+      
+
+        <div class="card">
+          <div class="color-panel tea-rose">
+          
+        </div>
+        <p class="color-label" >Tea Rose</p>
+          <p class="color-hex">#F88379</p>
+        </div>
+
+          <div class="card">
+            <div class="color-panel pale-violet-red">
+          
+        </div>
+        <p class="color-label" >Pale Violet Red</p>
+          <p class="color-hex">#DB7093</p>
+        </div>
+
+        <div class="card">
+          <div class="color-panel rosewood">
+          
+        </div>
+        <p class="color-label" >Rosewood</p>
+          <p class="color-hex">#65000B</p>
+        </div>
+
+      </div>
     </div>
-  </div>
-  
-  
-  
-  
-  
-</body>
+  </body>
 </html>
